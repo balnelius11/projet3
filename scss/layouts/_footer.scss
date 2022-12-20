@@ -1,0 +1,16 @@
+.footer-body{
+    background-color: rgb(48, 48, 48);
+    margin-left: 20px;
+    .footer__image{
+        filter:brightness(100);
+        width:90px;
+        margin-bottom: 10px;
+    }
+    .footer__lien{
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        color:white;
+        display:block;
+        flex-direction: column;
+    }
+}

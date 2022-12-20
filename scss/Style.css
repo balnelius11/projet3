@@ -1,0 +1,34 @@
+.footer-body {
+  background-color: rgb(48, 48, 48);
+  margin-left: 20px;
+}
+.footer-body .footer__image {
+  filter: brightness(100);
+  width: 90px;
+  margin-bottom: 10px;
+}
+.footer-body .footer__lien {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: block;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+}
+.header .header__a {
+  text-decoration: none;
+  color: black;
+}
+.header .header__logo {
+  margin: auto;
+  height: 30px;
+}
+
+.fa-arrow-left-long {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}/*# sourceMappingURL=Style.css.map */

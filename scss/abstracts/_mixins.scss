@@ -1,0 +1,10 @@
+@mixin spacebetween{
+display:flex;
+justify-content: space-between;
+width:100%
+}
+@mixin spacebetween2{
+    display:inline-flex;
+    justify-content: space-between;
+    width:100%
+}
