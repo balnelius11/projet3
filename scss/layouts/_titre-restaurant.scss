@@ -1,0 +1,21 @@
+.titre {
+    display:flex;
+    justify-content: space-between;
+    margin-top: -50px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
+    background-color: beige;
+    position: relative;
+    z-index: 2;
+
+    .titre__titre{
+        margin-left: 3.5%;
+    }
+
+    .iconecoeur {
+        padding-top: 24px;
+        font-size: 28px;
+        margin-right: 3%;
+    }
+}

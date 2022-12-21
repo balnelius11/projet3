@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   position: relative;
 }
@@ -27,6 +28,18 @@ footer iframe {
   margin-left: 3%;
 }
 
+header {
+  position: relative;
+  height: 60px;
+}
+header .header-object {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+}
+
 .header {
   display: flex;
   max-width: 100%;
@@ -46,6 +59,33 @@ footer iframe {
   top: 10px;
 }
 
+.image-entete {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titre {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
+  background-color: beige;
+  position: relative;
+  z-index: 2;
+}
+.titre .titre__titre {
+  margin-left: 3.5%;
+}
+.titre .iconecoeur {
+  padding-top: 24px;
+  font-size: 28px;
+  margin-right: 3%;
+}
+
 .main__titre {
   text-align: center;
 }
@@ -63,6 +103,13 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  opacity: 1;
+  min-width: 30%;
+}
+
+button:hover {
+  opacity: 0.4;
+  transition: opacity 1s ease-in-out;
 }
 
 .fa-location-dot {
@@ -175,4 +222,66 @@ button {
 
 .restaurants__vignettes_p2 {
   margin-top: -5px;
+}
+
+.repas .repas-typeplat {
+  text-transform: uppercase;
+  margin-left: 3%;
+}
+.repas .soulignage {
+  border-top: 3px solid #99E2D0;
+  width: 42px;
+  margin-top: -17px;
+  margin-left: 3%;
+}
+
+.repas-vignette-validation {
+  display: flex;
+  justify-content: space-between;
+  background-color: ghostwhite;
+  width: 94%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.repas-vignette-validation .repas-validation {
+  visibility: hidden;
+  opacity: 0;
+}
+.repas-vignette-validation .repas-vignette {
+  flex-basis: 80%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 10px;
+}
+.repas-vignette-validation .repas-vignette .repas-vignette--bold {
+  font-weight: bold;
+}
+.repas-vignette-validation .repas-vignette .repas-vignette__desc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.repas-vignette-validation .repas-vignette .repas-vignette__desc .repas-vignette__desc--bold {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.repas-vignette-validation:hover .repas-validation {
+  visibility: visible;
+  flex-basis: 20%;
+  max-width: 20%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.repas-vignette-validation:hover .repas-validation .fa-circle-check {
+  margin: 25px;
+  font-size: 20px;
+  color: white;
 }/*# sourceMappingURL=Style.css.map */
