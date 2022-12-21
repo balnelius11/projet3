@@ -1,1 +1,5 @@
-@import "layouts/__layouts.scss"
+@import "layouts/_layouts";
+@import "abstracts/_abstracts-dir";
+@import "base/_base-dir";
+@import "component/_component";
+@import "vendors/_vendor-dir";

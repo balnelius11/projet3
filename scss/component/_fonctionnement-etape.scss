@@ -1,0 +1,30 @@
+.fonctionnement{
+    .fonctionnement__titre{
+    margin-left: 4%;
+    }
+    .fonctionnements__etapes{
+    display:block;
+        .fonctionnements__etapes_div{
+        display:flex;
+        width:92%;
+        background-color: ghostwhite;
+        border-radius: 15px;
+        margin:20px;
+            .fonctionnements__etapes_divnum{
+            padding:2px 7px;
+            background-color: #9356DC;
+            border-radius: 100%;
+            margin-top: 1.1rem;
+            margin-left:-0.55rem;
+            }
+            .fonctionnements__etapes_divicone{
+            margin-top: 1.2rem;
+            margin-left: 5%;
+            margin-right: 5%;
+            }
+            .fonctionnements__etapes_divtext{
+            margin-top: 1.2rem;
+            }
+        }
+    }
+}

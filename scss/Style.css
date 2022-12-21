@@ -1,3 +1,13 @@
+footer {
+  position: relative;
+}
+footer iframe {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
 .footer-body {
   background-color: rgb(48, 48, 48);
   margin-left: 20px;
@@ -6,6 +16,7 @@
   filter: brightness(100);
   width: 90px;
   margin-bottom: 10px;
+  margin-left: 3%;
 }
 .footer-body .footer__lien {
   text-decoration: none;
@@ -13,10 +24,12 @@
   color: white;
   display: block;
   flex-direction: column;
+  margin-left: 3%;
 }
 
 .header {
   display: flex;
+  max-width: 100%;
 }
 .header .header__a {
   text-decoration: none;
@@ -31,4 +44,135 @@
   position: absolute;
   left: 20px;
   top: 10px;
+}
+
+.main__titre {
+  text-align: center;
+}
+
+.violet {
+  color: #9356DC;
+}
+
+button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-color: transparent;
+  height: 2.5rem;
+  border-radius: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-location-dot {
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+::-moz-placeholder {
+  text-align: center;
+  color: black;
+  text-transform: lowercase;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: black;
+  text-transform: lowercase;
+}
+
+::placeholder {
+  text-align: center;
+  color: black;
+  text-transform: lowercase;
+}
+
+.logocentre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 45%;
+}
+
+.fonctionnement .fonctionnement__titre {
+  margin-left: 4%;
+}
+.fonctionnement .fonctionnements__etapes {
+  display: block;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div {
+  display: flex;
+  width: 92%;
+  background-color: ghostwhite;
+  border-radius: 15px;
+  margin: 20px;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divnum {
+  padding: 2px 7px;
+  background-color: #9356DC;
+  border-radius: 100%;
+  margin-top: 1.1rem;
+  margin-left: -0.55rem;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divicone {
+  margin-top: 1.2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divtext {
+  margin-top: 1.2rem;
+}
+
+.restaurants {
+  background-color: ghostwhite;
+}
+.restaurants .restaurants__titres {
+  margin-left: 4%;
+}
+.restaurants .restaurants__vignettes {
+  background-color: white;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.restaurants .restaurants__vignettes .nosoulign {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants__vignettes_nouveau {
+  position: absolute;
+  top: -1%;
+  right: 2%;
+  padding: 4px;
+  background-color: #99E2D0;
+}
+
+.restaurants__vignettes_img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  font-size: 21px;
+}
+
+.restaurants__vignettes_p {
+  font-weight: bold;
+}
+
+.restaurants__vignettes_p2 {
+  margin-top: -5px;
 }/*# sourceMappingURL=Style.css.map */

@@ -1,3 +1,13 @@
+footer{
+    position:relative;
+    iframe{
+        position: absolute;
+        left:0px;
+        right:0px;
+        width:100%;
+    }
+}
+
 .footer-body{
     background-color: rgb(48, 48, 48);
     margin-left: 20px;
@@ -5,6 +15,7 @@
         filter:brightness(100);
         width:90px;
         margin-bottom: 10px;
+        margin-left: 3%;
     }
     .footer__lien{
         text-decoration: none;
@@ -12,5 +23,6 @@
         color:white;
         display:block;
         flex-direction: column;
+        margin-left: 3%;
     }
 }

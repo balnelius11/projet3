@@ -1,0 +1,51 @@
+.restaurants {
+    background-color: ghostwhite;
+
+    .restaurants__titres {
+        margin-left: 4%;
+    }
+
+    .restaurants__vignettes {
+        background-color: white;
+        height: 250px;
+        position: relative;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        .nosoulign{
+            text-decoration: none;
+            color:black;
+        }
+    }
+}
+
+.restaurants__vignettes_nouveau {
+    position: absolute;
+    top: -1%;
+    right: 2%;
+    padding: 4px;
+    background-color: #99E2D0;
+}
+
+.restaurants__vignettes_img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.fa-heart {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    font-size: 21px;
+}
+
+
+.restaurants__vignettes_p {
+    font-weight: bold;
+}
+
+.restaurants__vignettes_p2 {
+    margin-top: -5px;
+}
+
