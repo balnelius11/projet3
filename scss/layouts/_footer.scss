@@ -1,21 +1,25 @@
 footer{
+    background-color: ghostwhite;
     position:relative;
-    iframe{
+    .footer__object{
         position: absolute;
         left:0px;
         right:0px;
         width:100%;
+        height:200px;
     }
 }
 
 .footer-body{
     background-color: rgb(48, 48, 48);
     margin-left: 20px;
+    height:200px;
     .footer__image{
         filter:brightness(100);
         width:90px;
         margin-bottom: 10px;
         margin-left: 3%;
+        margin-top: 25px;
     }
     .footer__lien{
         text-decoration: none;
@@ -24,5 +28,6 @@ footer{
         display:block;
         flex-direction: column;
         margin-left: 3%;
+        font-size: large;
     }
 }

@@ -1,13 +1,17 @@
 .restaurants {
     background-color: ghostwhite;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
 
     .restaurants__titres {
         margin-left: 4%;
+        padding-top: 60px;
     }
 
     .restaurants__vignettes {
         background-color: white;
-        height: 250px;
+        height: 280px;
         position: relative;
         border-radius: 15px;
         margin-bottom: 20px;
@@ -24,28 +28,33 @@
     right: 2%;
     padding: 4px;
     background-color: #99E2D0;
+    color:#008766;
 }
 
 .restaurants__vignettes_img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+    object-position: 50% 61%;
 }
 
 .fa-heart {
     position: absolute;
     right: 5%;
     bottom: 10%;
-    font-size: 21px;
+    font-size: 26px;
 }
 
 
 .restaurants__vignettes_p {
     font-weight: bold;
+    margin-left: 3%;
+    margin-top: 12px;
 }
 
 .restaurants__vignettes_p2 {
-    margin-top: -5px;
+    margin-top: -10px;
+    margin-left: 3%;
 }
 

@@ -1,23 +1,29 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@import url(scss«stracts__abstracts-dir.scss);
 footer {
+  background-color: ghostwhite;
   position: relative;
 }
-footer iframe {
+footer .footer__object {
   position: absolute;
   left: 0px;
   right: 0px;
   width: 100%;
+  height: 200px;
 }
 
 .footer-body {
   background-color: rgb(48, 48, 48);
   margin-left: 20px;
+  height: 200px;
 }
 .footer-body .footer__image {
   filter: brightness(100);
   width: 90px;
   margin-bottom: 10px;
   margin-left: 3%;
+  margin-top: 25px;
 }
 .footer-body .footer__lien {
   text-decoration: none;
@@ -26,11 +32,12 @@ footer iframe {
   display: block;
   flex-direction: column;
   margin-left: 3%;
+  font-size: large;
 }
 
 header {
   position: relative;
-  height: 60px;
+  height: 65px;
 }
 header .header-object {
   position: absolute;
@@ -38,6 +45,7 @@ header .header-object {
   right: 0px;
   top: 0px;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .header {
@@ -51,12 +59,31 @@ header .header-object {
 .header .header__logo {
   margin: auto;
   height: 30px;
+  margin-top: 20px;
 }
 
 .fa-arrow-left-long {
   position: absolute;
   left: 20px;
-  top: 10px;
+  top: 28px;
+}
+
+body {
+  margin: 0px;
+}
+body main {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body main #main__titre--h1 {
+  padding-top: 90px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.main {
+  padding-bottom: 58px;
 }
 
 .image-entete {
@@ -69,42 +96,69 @@ header .header-object {
 .titre {
   display: flex;
   justify-content: space-between;
-  margin-top: -50px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  margin-top: -60px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
   /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
-  background-color: beige;
+  background-color: ghostwhite;
   position: relative;
   z-index: 2;
 }
 .titre .titre__titre {
   margin-left: 3.5%;
+  padding-top: 15px;
+  margin-bottom: -2px;
 }
 .titre .iconecoeur {
-  padding-top: 24px;
   font-size: 28px;
   margin-right: 3%;
+  transition: font-weight 1s ease;
+}
+.titre .iconecoeur:hover {
+  font-weight: 900;
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  opacity: 1;
 }
 
 .main__titre {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .violet {
   color: #9356DC;
 }
 
+p {
+  font-family: "Roboto-Regular";
+}
+
+button {
+  font-family: "Roboto-Regular";
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand-Regular";
+}
+
+.main {
+  background-color: ghostwhite;
+}
+
 button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border-color: transparent;
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   opacity: 1;
-  min-width: 30%;
+  min-width: 45%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 button:hover {
@@ -112,78 +166,135 @@ button:hover {
   transition: opacity 1s ease-in-out;
 }
 
+.main__button {
+  min-width: 60%;
+  height: 3.5rem;
+  border-radius: 40px;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+form {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 65px;
+  height: 80px;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: lightgray;
+  border-top: lightgray solid 3px;
+}
+
+input {
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: lightgray;
+  border-top: lightgray;
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
 .fa-location-dot {
   width: 100%;
   height: 2rem;
   margin: 0;
-  background-color: lightgrey;
+  background-color: rgb(235, 235, 235);
 }
 
 ::-moz-placeholder {
   text-align: center;
   color: black;
-  text-transform: lowercase;
 }
 
 :-ms-input-placeholder {
   text-align: center;
   color: black;
-  text-transform: lowercase;
 }
 
 ::placeholder {
   text-align: center;
   color: black;
-  text-transform: lowercase;
 }
 
-.logocentre {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.header__logocentre {
+  display: flex;
+}
+.header__logocentre .logocentre {
+  margin: auto;
+  height: 30px;
   max-width: 45%;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
+.fonctionnement {
+  margin-top: 50px;
+  padding-bottom: 25px;
+}
 .fonctionnement .fonctionnement__titre {
-  margin-left: 4%;
+  margin-left: 7%;
 }
 .fonctionnement .fonctionnements__etapes {
   display: block;
+  margin-left: 7%;
+  margin-right: 5%;
+  padding-bottom: 5px;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div {
   display: flex;
-  width: 92%;
+  width: 100%;
   background-color: ghostwhite;
-  border-radius: 15px;
-  margin: 20px;
+  border-radius: 25px;
+  margin-left: 0px;
+  margin-right: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 4.7rem;
+  box-shadow: 1px 4px 8px 0px #c4c4c4;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:hover .fa-solid {
+  color: #9356DC;
+  opacity: 1 inherit;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divnum {
-  padding: 2px 7px;
+  padding: 2px 8px;
   background-color: #9356DC;
   border-radius: 100%;
-  margin-top: 1.1rem;
+  margin-top: 1.5rem;
   margin-left: -0.55rem;
+  margin-bottom: 1.8rem;
+  color: white;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divicone {
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 22px;
+  color: gray;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divtext {
-  margin-top: 1.2rem;
+  margin-top: 1.8rem;
 }
 
 .restaurants {
   background-color: ghostwhite;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 40px;
 }
 .restaurants .restaurants__titres {
   margin-left: 4%;
+  padding-top: 60px;
 }
 .restaurants .restaurants__vignettes {
   background-color: white;
-  height: 250px;
+  height: 280px;
   position: relative;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -199,34 +310,46 @@ button:hover {
   right: 2%;
   padding: 4px;
   background-color: #99E2D0;
+  color: #008766;
 }
 
 .restaurants__vignettes_img {
   width: 100%;
-  height: 180px;
+  height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
+  -o-object-position: 50% 61%;
+     object-position: 50% 61%;
 }
 
 .fa-heart {
   position: absolute;
   right: 5%;
   bottom: 10%;
-  font-size: 21px;
+  font-size: 26px;
 }
 
 .restaurants__vignettes_p {
   font-weight: bold;
+  margin-left: 3%;
+  margin-top: 12px;
 }
 
 .restaurants__vignettes_p2 {
-  margin-top: -5px;
+  margin-top: -10px;
+  margin-left: 3%;
 }
 
+.repas {
+  background-color: ghostwhite;
+  margin-top: -22px;
+}
 .repas .repas-typeplat {
   text-transform: uppercase;
   margin-left: 3%;
+  padding-top: 40px;
+  padding-bottom: 2px;
 }
 .repas .soulignage {
   border-top: 3px solid #99E2D0;
@@ -235,13 +358,17 @@ button:hover {
   margin-left: 3%;
 }
 
+.cartecomplete {
+  background-color: ghostwhite;
+}
+
 .repas-vignette-validation {
   display: flex;
   justify-content: space-between;
-  background-color: ghostwhite;
+  background-color: white;
   width: 94%;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -284,4 +411,123 @@ button:hover {
   margin: 25px;
   font-size: 20px;
   color: white;
+}
+
+footer {
+  background-color: ghostwhite;
+  position: relative;
+}
+footer .footer__object {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-body {
+  background-color: rgb(48, 48, 48);
+  margin-left: 20px;
+  height: 200px;
+}
+.footer-body .footer__image {
+  filter: brightness(100);
+  width: 90px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  margin-top: 25px;
+}
+.footer-body .footer__lien {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  display: block;
+  flex-direction: column;
+  margin-left: 3%;
+  font-size: large;
+}
+
+header {
+  position: relative;
+  height: 65px;
+}
+header .header-object {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.header {
+  display: flex;
+  max-width: 100%;
+}
+.header .header__a {
+  text-decoration: none;
+  color: black;
+}
+.header .header__logo {
+  margin: auto;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.fa-arrow-left-long {
+  position: absolute;
+  left: 20px;
+  top: 28px;
+}
+
+body {
+  margin: 0px;
+}
+body main {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body main #main__titre--h1 {
+  padding-top: 90px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.main {
+  padding-bottom: 58px;
+}
+
+.image-entete {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titre {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -60px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
+  background-color: ghostwhite;
+  position: relative;
+  z-index: 2;
+}
+.titre .titre__titre {
+  margin-left: 3.5%;
+  padding-top: 15px;
+  margin-bottom: -2px;
+}
+.titre .iconecoeur {
+  font-size: 28px;
+  margin-right: 3%;
+  transition: font-weight 1s ease;
+}
+.titre .iconecoeur:hover {
+  font-weight: 900;
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  opacity: 1;
 }/*# sourceMappingURL=Style.css.map */

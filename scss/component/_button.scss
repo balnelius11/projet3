@@ -2,16 +2,26 @@ button{
     background:linear-gradient(to bottom right, $rose,$violet) ;
     color:white;
     border-color: transparent;
-    height: 2.5rem;
+    height: 3rem;
     border-radius:25px;
     display:block;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-    min-width: 30%;
+    min-width: 45%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 button:hover{
     opacity:0.4;
     transition: opacity 1s ease-in-out;
+}
+
+.main__button{
+    min-width: 60%;
+    height:3.5rem;
+    border-radius:40px;
+    font-size: 16px;
+    margin-top:32px;
 }
