@@ -1,0 +1,13 @@
+@use '../abstracts/mixins';
+.repas--animation1{
+  @include animation-fondu-partial;
+  animation-duration: 1s;
+}
+.repas--animation2{
+  @include animation-fondu-partial;
+  animation-duration: 3s;
+}
+.repas--animation3{
+  @include animation-fondu-partial;
+  animation-duration: 5s;
+}

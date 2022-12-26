@@ -8,3 +8,28 @@ width:100%
     justify-content: space-between;
     width:100%
 }
+@mixin animation-fondu-partial{
+    animation-name: apparitionfondu;
+    animation-delay: 0ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    @keyframes apparitionfondu{
+        0%{
+            transform:translateY(5vh);
+            opacity:0;
+        }
+        40%{
+            transform:translateY(5vh);
+            opacity:0;
+        }
+        80%{ 
+            transform: translateY(2vh);
+            opacity:0.6;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity:1;
+        }
+    }
+}

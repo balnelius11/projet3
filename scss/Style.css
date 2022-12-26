@@ -126,8 +126,8 @@ body main #main__titre--h1 {
   width: 100vw;
   height: 105vh;
   background-color: #9356DC;
-  -webkit-animation: disparition forwards 5s 1;
-          animation: disparition forwards 5s 1;
+  -webkit-animation: disparition forwards 3s 1;
+          animation: disparition forwards 3s 1;
   z-index: 9999;
 }
 @-webkit-keyframes disparition {
@@ -251,11 +251,13 @@ button {
   min-width: 45%;
   margin-top: 40px;
   margin-bottom: 40px;
+  box-shadow: 4px 4px 2px lightgrey;
 }
 
 button:hover {
-  opacity: 0.4;
+  opacity: 0.7;
   transition: opacity 1s ease-in-out;
+  box-shadow: 4px 4px 2px grey;
 }
 
 .main__button {
@@ -450,12 +452,20 @@ input {
   margin-left: 3%;
 }
 
+#repas-typeplat--margeplus {
+  margin-left: 15%;
+}
+
+#repas-typeplat--margeplus2 {
+  margin-left: 15%;
+}
+
 .cartecomplete {
   background-color: ghostwhite;
 }
 
 .repas-vignette-validation {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   background-color: white;
   width: 94%;
@@ -469,13 +479,15 @@ input {
   opacity: 0;
 }
 .repas-vignette-validation .repas-vignette {
-  flex-basis: 80%;
+  width: calc(94% - 80px);
   flex-grow: 1;
   flex-shrink: 1;
   margin-left: 10px;
+  flex-wrap: nowrap;
 }
 .repas-vignette-validation .repas-vignette .repas-vignette--bold {
   font-weight: bold;
+  margin-right: 70px;
 }
 .repas-vignette-validation .repas-vignette .repas-vignette__desc {
   display: flex;
@@ -484,25 +496,69 @@ input {
 }
 .repas-vignette-validation .repas-vignette .repas-vignette__desc .repas-vignette__desc--bold {
   font-weight: bold;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
+.repas-vignette-validation:hover {
+  overflow: hidden;
+}
 .repas-vignette-validation:hover .repas-validation {
   visibility: visible;
-  flex-basis: 20%;
-  max-width: 20%;
-  flex-grow: 1;
-  flex-shrink: 1;
+  width: 75px;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 1;
   transition: opacity 1s ease;
+  -webkit-animation-name: droitegauche;
+          animation-name: droitegauche;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
-.repas-vignette-validation:hover .repas-validation .fa-circle-check {
+@-webkit-keyframes droitegauche {
+  0% {
+    transform: translateX(76px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes droitegauche {
+  0% {
+    transform: translateX(76px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.repas-vignette-validation:hover .fa-circle-check {
   margin: 25px;
   font-size: 20px;
   color: white;
+  -webkit-animation-name: cerclequitourne;
+          animation-name: cerclequitourne;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes cerclequitourne {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes cerclequitourne {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 
 .coeur, .iconecoeur {
@@ -522,179 +578,128 @@ input {
   font-weight: bold;
 }
 
-footer {
-  background-color: ghostwhite;
-  position: relative;
+.repas--animation1 {
+  -webkit-animation-name: apparitionfondu;
+          animation-name: apparitionfondu;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-footer .footer__object {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  height: 200px;
-}
-
-.footer-body {
-  background-color: rgb(48, 48, 48);
-  margin-left: 20px;
-  height: 200px;
-}
-.footer-body .footer__image {
-  filter: brightness(100);
-  width: 90px;
-  margin-bottom: 10px;
-  margin-left: 3%;
-  margin-top: 25px;
-}
-.footer-body .footer__lien {
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  color: white;
-  display: block;
-  flex-direction: column;
-  margin-left: 3%;
-  font-size: large;
-}
-
-header {
-  position: relative;
-  height: 65px;
-}
-header .header-object {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  width: 100%;
-  margin-bottom: 60px;
-}
-
-.header {
-  display: flex;
-  max-width: 100%;
-}
-.header .header__a {
-  text-decoration: none;
-  color: black;
-}
-.header .header__logo {
-  margin: auto;
-  height: 30px;
-  margin-top: 20px;
-}
-
-.fa-arrow-left-long {
-  position: absolute;
-  left: 20px;
-  top: 28px;
-}
-
-body {
-  margin: 0px;
-}
-body main {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-body main #main__titre--h1 {
-  padding-top: 90px;
-  padding-bottom: 18px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.main {
-  padding-bottom: 58px;
-}
-
-.image-entete {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.titre {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -60px;
-  border-top-right-radius: 45px;
-  border-top-left-radius: 45px;
-  /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
-  background-color: ghostwhite;
-  position: relative;
-  z-index: 2;
-}
-.titre .titre__titre {
-  margin-left: 3.5%;
-  padding-top: 15px;
-  margin-bottom: -2px;
-}
-.titre .iconecoeur {
-  font-size: 28px;
-  margin-right: 3%;
-  transition: font-weight 1s ease;
-}
-.titre .iconecoeur:hover {
-  font-weight: 900;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  opacity: 1;
-}
-
-.parentspinner {
-  position: fixed;
-  width: 100vw;
-  height: 105vh;
-  background-color: #9356DC;
-  -webkit-animation: disparition forwards 5s 1;
-          animation: disparition forwards 5s 1;
-  z-index: 9999;
-}
-@keyframes disparition {
+@-webkit-keyframes apparitionfondu {
   0% {
-    transform: scale(1);
-  }
-  99% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-.parentspinner .spinner {
-  position: absolute;
-  top: 37%;
-  bottom: 55%;
-  left: 44%;
-  right: 50%;
-  background: #99E2D0;
-  pointer-events: none;
-  width: 10rem;
-  height: 10rem;
-  border: 0.4em solid transparent;
-  border-color: #eee;
-  border-top-color: #FF79DA;
-  border-radius: 50%;
-  -webkit-animation: loadingspin 1s linear forwards infinite;
-          animation: loadingspin 1s linear forwards infinite;
-}
-.parentspinner .spinner .spinnertext {
-  text-align: center;
-  margin-top: 45%;
-  margin-right: auto;
-  font-family: "Roboto", sans-serif;
-}
-@keyframes loadingspin {
-  0% {
-    transform: rotate(0deg);
+    transform: translateY(5vh);
     opacity: 0;
   }
-  50% {
-    transform: rotate(180deg);
+  40% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(2vh);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
-  100% {
-    transform: rotate(360deg);
+}
+@keyframes apparitionfondu {
+  0% {
+    transform: translateY(5vh);
     opacity: 0;
   }
+  40% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(2vh);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.repas--animation2 {
+  -webkit-animation-name: apparitionfondu;
+          animation-name: apparitionfondu;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@keyframes apparitionfondu {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(2vh);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.repas--animation3 {
+  -webkit-animation-name: apparitionfondu;
+          animation-name: apparitionfondu;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+@keyframes apparitionfondu {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(2vh);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.repas-vignette--bold, .repas-vignette__desc p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 50px;
+  max-width: calc(100vw - 80px);
+  flex-shrink: 1;
 }/*# sourceMappingURL=Style.css.map */
