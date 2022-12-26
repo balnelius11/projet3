@@ -1,0 +1,63 @@
+.parentspinner {
+  position: fixed;
+  width: 100vw;
+  height: 105vh;
+  background-color: $violet;
+  animation: disparition forwards 5s 1;
+  z-index: 9999;
+
+
+  @keyframes disparition {
+    0% {
+      transform: scale(1);
+    }
+
+    99% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  .spinner {
+    .spinnertext{
+      text-align: center;
+      margin-top: 45%;
+      margin-right: auto;
+      font-family: 'Roboto', sans-serif;
+    }
+    position: absolute;
+    top: 37%;
+    bottom: 55%;
+    left: 44%;
+    right: 50%;
+    background: $bleu;
+    pointer-events: none;
+    width: 10rem;
+    height: 10rem;
+    border: 0.4em solid transparent;
+    border-color: #eee;
+    border-top-color: $rose;
+    border-radius: 50%;
+    animation: loadingspin 1s linear forwards infinite;
+
+    @keyframes loadingspin {
+      0% {
+        transform: rotate(0deg);
+        opacity: 0;
+      }
+
+      50% {
+        transform: rotate(180deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: rotate(360deg);
+        opacity: 0;
+      }
+    }
+  }
+}
