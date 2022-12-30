@@ -29,7 +29,6 @@
                 background-color: lighten(#9356dc, 34%);
                 .fa-solid{
                     color:#9356DC;
-                    opacity: 1 inherit;
                 }
             }
 
@@ -53,6 +52,7 @@
 
             .fonctionnements__etapes_divtext {
                 margin-top: 1.8rem;
+                font-weight: bold;
             }
         }
     }

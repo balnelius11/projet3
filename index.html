@@ -3,8 +3,10 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/c254746489.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
     <meta charset="UTF-8">
@@ -18,15 +20,18 @@
             <p class="spinnertext">Ohmyfood</p>
         </div>
     </div>
-        
+
     <header class="header__logocentre">
         <img src="images/logo/ohmyfood.png" class="header__img logocentre" />
     </header>
     <main>
         <section class="main">
-            <form method="post">
-                <input type="text" class="fa-solid fa-location-dot form" placeholder="&#xf3c5 'Paris,Belleville'">
-            </form>
+            <div class="formulaire">
+                <div class="formulaire__miseenforme">
+                    <span class="fa-solid fa-location-dot"></span>
+                    <input type="text" class="formulaire__input" placeholder="Paris,Belleville" size="14">
+                </div>
+            </div>
             <h1 class="main__titre" id="main__titre--h1">Réservez le menu qui vous convient</h1>
             <p class="main__titre">Découvrez des restaurants d'exception sélectionnés par nos soins </p>
             <button class="main__button button" type="button"> explorez nos restaurants </button>

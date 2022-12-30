@@ -1,4 +1,5 @@
 .parentspinner {
+  display:flex;
   position: fixed;
   width: 100vw;
   height: 105vh;
@@ -23,20 +24,19 @@
 
   .spinner {
     .spinnertext{
-      text-align: center;
-      margin-top: 45%;
-      margin-right: auto;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      font-size:12px;
       font-family: 'Roboto', sans-serif;
     }
-    position: absolute;
-    top: 37%;
-    bottom: 55%;
-    left: 44%;
-    right: 50%;
+    display:flex;
+    margin:auto;
     background: $bleu;
     pointer-events: none;
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     border: 0.4em solid transparent;
     border-color: #eee;
     border-top-color: $rose;
