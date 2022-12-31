@@ -11,6 +11,9 @@
     margin-bottom: 13px;
     margin-left: 3%;
     margin-right: 3%;
+    @media(min-width:850px){
+        width:21%
+    }
 
     .repas-validation {
         visibility: hidden;

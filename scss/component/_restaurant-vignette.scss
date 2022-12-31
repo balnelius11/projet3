@@ -3,13 +3,35 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 40px;
+    @media (min-width: 850px){
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
 
     .restaurants__titres {
         margin-left: 4%;
         padding-top: 52px;
+        @media (min-width: 850px){
+            order:-1;
+            flex: 1 0 100%;
+            padding-top: 40px;
+        }
     }
 
     .restaurants__vignettes {
+        @media (min-width: 850px){
+            width:40vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            margin-bottom: 50px;
+        }
+        @media (min-width: 1400px){
+            width:20vw;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            margin-bottom: 50px;
+        }
         background-color: white;
         height: 252px;
         position: relative;
