@@ -20,13 +20,5 @@
 
     .iconecoeur {
         font-size: 28px;
-        margin-right: 3%;
-        transition: font-weight 1s ease;
-
-        &:hover {
-            font-weight: 900;
-            color:linear-gradient(to bottom right, $rose,$violet);
-            opacity:1;
-        }
-    }
+        margin-right: 3%;    }
 }

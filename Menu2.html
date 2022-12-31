@@ -9,7 +9,7 @@
     <title>Menu2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="scss/Style.css" media="all" />
+    <link rel="stylesheet" href="scss/Style.css" media="all">
 </head>
 
 <body>
@@ -17,10 +17,14 @@
         <object data="header.html" class="header-object"></object>
     </header>
     <main>
-        <img class="image-entete" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+        <img class="image-entete" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image entete">
         <div class="titre">
             <h1 class="titre__titre">La note enchantée</h1>
             <i class="fa-regular fa-heart iconecoeur"></i>
+            <form class="titre__like">
+                <input type="checkbox" id="like-button" name="like-button">
+                <label for="like-button">❤</label>
+            </form>
         </div>
         <div class="cartecomplete">
             <div class="repas repas--animation1">
@@ -155,7 +159,7 @@
                     </div>
                 </div>
                 <div class="bouton">
-                    <button class="bouton__button" type="button" href="#" cursor="pointer"> commander </button>
+                    <button class="bouton__button" type="button"> commander </button>
                 </div>
             </div>
         </div>
