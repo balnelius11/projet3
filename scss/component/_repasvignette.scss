@@ -23,6 +23,7 @@
         flex-shrink: 1;
         margin-left: 10px;
         flex-wrap: nowrap;
+        height: 67px;
 
         .repas-vignette--bold {
             font-weight: bold;
@@ -53,7 +54,7 @@
         opacity: 1;
         transition: opacity 1s ease;
         animation-name: droitegauche;
-        animation-duration: 3s;
+        animation-duration: 900ms;
         animation-fill-mode: forwards;
 
         @keyframes droitegauche{
@@ -72,7 +73,7 @@
         font-size: 20px;
         color: white;
         animation-name: cerclequitourne;
-        animation-duration: 3s;
+        animation-duration: 600ms;
         animation-fill-mode: forwards;
 
         @keyframes cerclequitourne {

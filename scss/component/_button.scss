@@ -1,7 +1,11 @@
+.bouton{
+    padding-bottom: 15px;
+}
 button{ 
     background:linear-gradient(to bottom right, $rose,$violet) ;
     color:white;
     border-color: transparent;
+    border: none;
     height: 3rem;
     border-radius:25px;
     display:block;
@@ -9,9 +13,10 @@ button{
     margin-right: auto;
     opacity: 1;
     min-width: 45%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    box-shadow: 4px 4px 2px lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px lightgrey;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover{
@@ -22,8 +27,8 @@ button:hover{
 
 .main__button{
     min-width: 60%;
-    height:3.5rem;
+    height:3.2rem;
     border-radius:40px;
-    font-size: 16px;
+    font-size: medium;
     margin-top:32px;
 }

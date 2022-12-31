@@ -1,5 +1,6 @@
 .formulaire {
     position: relative;
+    margin:0;
 
     .formulaire__miseenforme {
         position: absolute;
@@ -23,6 +24,7 @@
                 text-align: center;
                 color: black;
                 font-family: 'Roboto', sans-serif;
+                opacity:1;
             }
         }
         .fa-location-dot{

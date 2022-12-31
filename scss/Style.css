@@ -12,6 +12,7 @@ footer .footer__object {
   right: 0px;
   width: 100%;
   height: 200px;
+  border: transparent;
 }
 
 .footer-body {
@@ -77,19 +78,30 @@ body main {
   margin-right: 0px;
 }
 body main #main__titre--h1 {
-  padding-top: 90px;
-  padding-bottom: 18px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 85px;
+  padding-bottom: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.main__sous-titre {
+  margin-left: 7%;
+  margin-right: 7%;
+  padding: 0px;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
 }
 
 .main {
-  padding-bottom: 58px;
+  padding-bottom: 33px;
 }
 
 .image-entete {
   width: 100%;
-  height: 300px;
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -109,6 +121,8 @@ body main #main__titre--h1 {
   margin-left: 3.5%;
   padding-top: 15px;
   margin-bottom: -2px;
+  font-family: "shrikhand", sans-serif;
+  font-size: 27px;
 }
 .titre .iconecoeur {
   font-size: 28px;
@@ -127,8 +141,8 @@ body main #main__titre--h1 {
   width: 100vw;
   height: 105vh;
   background-color: #9356DC;
-  -webkit-animation: disparition forwards 3s 1;
-          animation: disparition forwards 3s 1;
+  -webkit-animation: disparition forwards 2s 1;
+          animation: disparition forwards 2s 1;
   z-index: 9999;
 }
 @-webkit-keyframes disparition {
@@ -212,6 +226,12 @@ h1, h2 {
   font-family: "Roboto", sans-serif;
 }
 
+html, body {
+  margin-right: 0px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .main__titre {
   text-align: center;
   margin: 0;
@@ -238,10 +258,15 @@ h1, h2, h3 {
   background-color: ghostwhite;
 }
 
+.bouton {
+  padding-bottom: 15px;
+}
+
 button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border-color: transparent;
+  border: none;
   height: 3rem;
   border-radius: 25px;
   display: block;
@@ -249,9 +274,10 @@ button {
   margin-right: auto;
   opacity: 1;
   min-width: 45%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  box-shadow: 4px 4px 2px lightgrey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px lightgrey;
+  font-family: "Roboto", sans-serif;
 }
 
 button:hover {
@@ -262,14 +288,15 @@ button:hover {
 
 .main__button {
   min-width: 60%;
-  height: 3.5rem;
+  height: 3.2rem;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: medium;
   margin-top: 32px;
 }
 
 .formulaire {
   position: relative;
+  margin: 0;
 }
 .formulaire .formulaire__miseenforme {
   position: absolute;
@@ -295,16 +322,19 @@ button:hover {
   text-align: center;
   color: black;
   font-family: "Roboto", sans-serif;
+  opacity: 1;
 }
 .formulaire .formulaire__miseenforme .formulaire__input:-ms-input-placeholder {
   text-align: center;
   color: black;
   font-family: "Roboto", sans-serif;
+  opacity: 1;
 }
 .formulaire .formulaire__miseenforme .formulaire__input::placeholder {
   text-align: center;
   color: black;
   font-family: "Roboto", sans-serif;
+  opacity: 1;
 }
 .formulaire .formulaire__miseenforme .fa-location-dot {
   font-size: 16px;
@@ -335,7 +365,6 @@ button:hover {
   display: block;
   margin-left: 7%;
   margin-right: 5%;
-  padding-bottom: 5px;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div {
   display: flex;
@@ -384,14 +413,15 @@ button:hover {
 }
 .restaurants .restaurants__titres {
   margin-left: 4%;
-  padding-top: 60px;
+  padding-top: 52px;
 }
 .restaurants .restaurants__vignettes {
   background-color: white;
-  height: 280px;
+  height: 252px;
   position: relative;
   border-radius: 15px;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 5px 0px lightgrey;
 }
 .restaurants .restaurants__vignettes .nosoulign {
   text-decoration: none;
@@ -400,16 +430,17 @@ button:hover {
 
 .restaurants__vignettes_nouveau {
   position: absolute;
-  top: -1%;
-  right: 2%;
-  padding: 4px;
+  top: 1%;
+  right: 3%;
+  padding: 7px 12px;
   background-color: #99E2D0;
   color: #008766;
+  font-size: small;
 }
 
 .restaurants__vignettes_img {
   width: 100%;
-  height: 190px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -442,13 +473,14 @@ button:hover {
 .repas .repas-typeplat {
   text-transform: uppercase;
   margin-left: 3%;
-  padding-top: 40px;
+  padding-top: 33px;
   padding-bottom: 2px;
+  font-weight: 400;
 }
 .repas .soulignage {
   border-top: 3px solid #99E2D0;
   width: 42px;
-  margin-top: -17px;
+  margin-top: -19px;
   margin-left: 3%;
 }
 
@@ -484,6 +516,7 @@ button:hover {
   flex-shrink: 1;
   margin-left: 10px;
   flex-wrap: nowrap;
+  height: 67px;
 }
 .repas-vignette-validation .repas-vignette .repas-vignette--bold {
   font-weight: bold;
@@ -512,8 +545,8 @@ button:hover {
   transition: opacity 1s ease;
   -webkit-animation-name: droitegauche;
           animation-name: droitegauche;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -539,8 +572,8 @@ button:hover {
   color: white;
   -webkit-animation-name: cerclequitourne;
           animation-name: cerclequitourne;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -561,13 +594,17 @@ button:hover {
   }
 }
 
-.coeur, .iconecoeur {
+.coeur,
+.iconecoeur {
   color: black;
   cursor: pointer;
+  opacity: 0.8;
 }
-.coeur:hover, .iconecoeur:hover {
-  -webkit-animation: coeur 0.3s ease-in-out;
-          animation: coeur 0.3s ease-in-out;
+.coeur:hover,
+.iconecoeur:hover {
+  -webkit-animation: coeur 300ms ease-in-out forwards;
+          animation: coeur 300ms ease-in-out forwards;
+  transition: opacity 1s ease;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
