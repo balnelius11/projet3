@@ -107,8 +107,7 @@ body main #main__titre--h1 {
 }
 
 .titre {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   margin-top: -60px;
   border-top-right-radius: 45px;
   border-top-left-radius: 45px;
@@ -125,8 +124,10 @@ body main #main__titre--h1 {
   font-size: 27px;
 }
 .titre .iconecoeur {
-  font-size: 28px;
-  margin-right: 3%;
+  position: absolute;
+  right: 60px;
+  top: 23px;
+  font-size: 27px;
 }
 
 .parentspinner {
@@ -648,52 +649,21 @@ button:hover {
 .coeur,
 .iconecoeur {
   color: black;
-  opacity: 0.8;
+  cursor: pointer;
 }
-
-.titre__like {
-  position: absolute;
-  right: calc(8% - 3px);
-  bottom: calc(10% - 6px);
-  font-size: 34px;
-  font-weight: 900;
-  color: transparent;
-}
-
-.like,
-.like2,
-.like3,
-.like4 {
-  position: absolute;
-  right: calc(5% - 2px);
-  bottom: calc(10% - 6px);
-  font-size: 30px;
-  font-weight: 900;
-  color: transparent;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox]:checked + label {
-  color: black;
-  -webkit-animation: coeur 1s ease-in-out forwards;
-          animation: coeur 1s ease-in-out forwards;
+.coeur:hover,
+.iconecoeur:hover {
+  -webkit-animation: coeur 0.3s ease-in-out;
+          animation: coeur 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+  font-weight: 900;
 }
-
-input[type=checkbox]:not(:checked) + label {
-  color: transparent;
-  cursor: pointer;
-  opacity: 0.2;
-}
-
 @-webkit-keyframes coeur {
   0% {
     opacity: 0.2;
@@ -705,7 +675,6 @@ input[type=checkbox]:not(:checked) + label {
     opacity: 1;
   }
 }
-
 @keyframes coeur {
   0% {
     opacity: 0.2;
@@ -717,6 +686,15 @@ input[type=checkbox]:not(:checked) + label {
     opacity: 1;
   }
 }
+
+.like,
+.like2,
+.like3,
+.like4,
+.titre__like {
+  display: none;
+}
+
 .repas--animation1 {
   -webkit-animation-name: apparitionfondu;
           animation-name: apparitionfondu;
