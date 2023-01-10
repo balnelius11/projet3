@@ -1,0 +1,76 @@
+.coeur,
+.iconecoeur {
+  color: black;
+  opacity: 0.8;
+  &:active{
+    animation: coeur2 300ms ease-in-out backwards;
+  }
+}
+
+.titre__like {
+  position: absolute;
+  right: 40px;
+  bottom: -2.5px;
+  font-size: 34px;
+  font-weight: 900;
+  color: transparent;
+}
+
+.like,
+.like2,
+.like3,
+.like4 {
+  position: absolute;
+  right: 17px;
+  bottom: 23px;
+  font-size: 32.5px;
+  font-weight: 900;
+  color: transparent;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label {
+  color: black;
+  animation: coeur 300ms ease-in-out forwards;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+  color: transparent;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0.2;
+    transform:scale(0.1);
+  }
+  50% {
+    opacity: 0.4;
+    transform:scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+@keyframes coeur2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}

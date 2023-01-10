@@ -1,0 +1,27 @@
+@import'../abstracts/variable';
+.titre{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -60px;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    /* les 2 paramètres ci dessous doivent être ensemble pour effacer l'image en arrière plan*/
+    background-color: ghostwhite;
+    position: relative;
+    z-index: 2;
+
+    .titre__titre {
+        margin-left: 3.5%;
+        padding-top: 15px;
+        margin-bottom: -2px;
+        font-family: 'shrikhand', sans-serif;
+        font-size:27px;
+    }
+
+    .iconecoeur {
+        position:absolute;
+        font-size: 28px;
+        right:43px;
+        bottom:4px;   
+    }
+}

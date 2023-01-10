@@ -1,0 +1,25 @@
+html, body{
+    margin-right:0px;
+    padding:0;
+    overflow-x: hidden;
+}
+.main__titre{
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+.violet{
+    color:$violet;
+}
+p{
+    font-family: "Roboto-Regular", sans-serif;
+}
+button{
+    font-family:'Roboto-Regular';
+}
+h1, h2, h3{
+    font-family:"Roboto", sans-serif;
+}
+.main{
+    background-color: ghostwhite;
+}

@@ -1,0 +1,36 @@
+.formulaire {
+    position: relative;
+    margin:0;
+
+    .formulaire__miseenforme {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0px;
+        width: 100%;
+        height:50px;
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eaeaea;
+        .formulaire__input{
+            background-color: #eaeaea;
+            border:transparent;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 2;
+            &::placeholder{
+                text-align: center;
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                opacity:1;
+            }
+        }
+        .fa-location-dot{
+            font-size: 16px;
+            padding-bottom: 3px;
+            z-index: 3;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.header__logocentre {
+    display: flex;
+
+    .logocentre {
+        margin: auto;
+        height:30px;
+        max-width: 45%;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}

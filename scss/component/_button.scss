@@ -1,0 +1,46 @@
+.bouton{
+    padding-bottom: 15px;
+}
+button{ 
+    background:linear-gradient(to bottom right, $rose,$violet) ;
+    color:white;
+    border-color: transparent;
+    border: none;
+    height: 3rem;
+    border-radius:25px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    min-width: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px lightgrey;
+    font-family: 'Roboto', sans-serif;
+    @media(min-width:850px){
+        height: 4rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        min-width: 30%;
+    }
+}
+
+button:hover{
+    opacity:0.7;
+    transition: opacity 1s ease-in-out;
+    box-shadow: 4px 4px 2px grey;
+}
+
+.main__button{
+    min-width: 60%;
+    height:3.2rem;
+    border-radius:40px;
+    font-size: medium;
+    margin-top:32px;
+    @media(min-width:850px){
+        height: 4rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        min-width: 30%;
+    }
+}
