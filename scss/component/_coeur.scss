@@ -48,3 +48,29 @@ input[type="checkbox"]:not(:checked) + label {
   cursor: pointer;
   opacity: 0.2;
 }
+
+@keyframes coeur {
+  0% {
+    opacity: 0.2;
+    transform:scale(0.1);
+  }
+  50% {
+    opacity: 0.4;
+    transform:scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+@keyframes coeur2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}

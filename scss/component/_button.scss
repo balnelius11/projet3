@@ -30,3 +30,17 @@ button:hover{
     transition: opacity 1s ease-in-out;
     box-shadow: 4px 4px 2px grey;
 }
+
+.main__button{
+    min-width: 60%;
+    height:3.2rem;
+    border-radius:40px;
+    font-size: medium;
+    margin-top:32px;
+    @media(min-width:850px){
+        height: 4rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        min-width: 30%;
+    }
+}
