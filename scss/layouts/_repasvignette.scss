@@ -55,7 +55,7 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         opacity: 1;
-        transition: opacity 1s ease;
+        transition: opacity 400ms ease;
         animation-name: droitegauche;
         animation-duration: 900ms;
         animation-fill-mode: forwards;
@@ -76,7 +76,7 @@
         font-size: 20px;
         color: white;
         animation-name: cerclequitourne;
-        animation-duration: 600ms;
+        animation-duration: 800ms;
         animation-fill-mode: forwards;
 
         @keyframes cerclequitourne {

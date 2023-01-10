@@ -285,7 +285,7 @@ body main #main__titre--h1 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 400ms ease;
   -webkit-animation-name: droitegauche;
           animation-name: droitegauche;
   -webkit-animation-duration: 900ms;
@@ -315,8 +315,8 @@ body main #main__titre--h1 {
   color: white;
   -webkit-animation-name: cerclequitourne;
           animation-name: cerclequitourne;
-  -webkit-animation-duration: 600ms;
-          animation-duration: 600ms;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
