@@ -275,10 +275,10 @@ body main #main__titre--h1 {
   margin-left: 20px;
 }
 
-.repas-vignette-validation:hover {
+.repas-vignette-validation:active {
   overflow: hidden;
 }
-.repas-vignette-validation:hover .repas-validation {
+.repas-vignette-validation:active .repas-validation {
   visibility: visible;
   width: 75px;
   background-color: #99E2D0;
@@ -309,7 +309,7 @@ body main #main__titre--h1 {
     transform: translateX(0px);
   }
 }
-.repas-vignette-validation:hover .fa-circle-check {
+.repas-vignette-validation:active .fa-circle-check {
   margin: 25px;
   font-size: 20px;
   color: white;
@@ -594,8 +594,8 @@ button:hover {
 .titre__like {
   position: absolute;
   right: 40px;
-  bottom: -2.5px;
-  font-size: 34px;
+  bottom: -4px;
+  font-size: 35px;
   font-weight: 900;
   color: transparent;
 }
@@ -607,7 +607,7 @@ button:hover {
   position: absolute;
   right: 17px;
   bottom: 23px;
-  font-size: 32.5px;
+  font-size: 33px;
   font-weight: 900;
   color: transparent;
 }
