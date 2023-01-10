@@ -1,0 +1,92 @@
+.cartecomplete {
+    background-color: ghostwhite;
+}
+
+.repas-vignette-validation {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 94%;
+    border-radius: 15px;
+    margin-bottom: 13px;
+    margin-left: 3%;
+    margin-right: 3%;
+    @media(min-width:850px){
+        width:24vw;
+    }
+
+    .repas-validation {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .repas-vignette {
+        width: calc(94% - 80px);
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-left: 10px;
+        flex-wrap: nowrap;
+        height: 67px;
+
+        .repas-vignette--bold {
+            font-weight: bold;
+            margin-right: 70px;
+        }
+
+        .repas-vignette__desc {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -30px;
+            .repas-vignette__desc--bold {
+                font-weight: bold;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.repas-vignette-validation:hover {
+    overflow: hidden;
+
+    .repas-validation {
+        visibility: visible;
+        width:75px;
+        background-color: $bleu;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        opacity: 1;
+        transition: opacity 1s ease;
+        animation-name: droitegauche;
+        animation-duration: 900ms;
+        animation-fill-mode: forwards;
+
+        @keyframes droitegauche{
+            0% {
+                transform:translateX(76px);
+            }
+
+            100% {
+                transform:translateX(0px);
+            }
+        }
+    }
+
+    .fa-circle-check {
+        margin: 25px;
+        font-size: 20px;
+        color: white;
+        animation-name: cerclequitourne;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+
+        @keyframes cerclequitourne {
+            0% {
+                transform:rotate(0deg);
+            }
+
+            100% {
+                transform:rotate(360deg);
+            }
+        }
+    }
+}
