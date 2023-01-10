@@ -1,6 +1,7 @@
 @import'../abstracts/variable';
 .titre{
-    position:relative;
+    display: flex;
+    justify-content: space-between;
     margin-top: -60px;
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
@@ -19,8 +20,8 @@
 
     .iconecoeur {
         position:absolute;
-        right:60px; 
-        top:23px;
-        font-size: 27px;
+        font-size: 28px;
+        right:43px;
+        bottom:4px;   
     }
 }
