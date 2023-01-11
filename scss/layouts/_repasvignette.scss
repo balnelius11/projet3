@@ -1,5 +1,5 @@
 .cartecomplete {
-    background-color: ghostwhite;
+    background-color: #f7f7f7;
 }
 
 .repas-vignette-validation {
@@ -45,7 +45,7 @@
     }
 }
 
-.repas-vignette-validation:active {
+.repas-vignette-validation:hover {
     overflow: hidden;
 
     .repas-validation {
@@ -59,6 +59,7 @@
         animation-name: droitegauche;
         animation-duration: 900ms;
         animation-fill-mode: forwards;
+        margin-bottom: -3px;
 
         @keyframes droitegauche{
             0% {
