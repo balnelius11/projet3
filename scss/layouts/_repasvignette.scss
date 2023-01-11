@@ -17,11 +17,11 @@
 
     .repas-validation {
         visibility: hidden;
-        opacity: 0;
+        opacity: 1;
     }
 
     .repas-vignette {
-        width: calc(94% - 80px);
+        width: 100%;
         flex-grow: 1;
         flex-shrink: 1;
         margin-left: 10px;
@@ -47,7 +47,10 @@
 
 .repas-vignette-validation:hover {
     overflow: hidden;
-
+    .repas-vignette{
+        width:calc(94% - 80px);
+        transition: width 900ms ease;
+    }
     .repas-validation {
         visibility: visible;
         width:75px;
@@ -59,6 +62,7 @@
         animation-name: droitegauche;
         animation-duration: 900ms;
         animation-fill-mode: forwards;
+        margin-bottom: -3px;
 
         @keyframes droitegauche{
             0% {
