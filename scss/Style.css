@@ -170,10 +170,10 @@ body main #main__titre--h1 {
     height: 4.8rem;
   }
 }
-.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:hover {
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:active {
   background-color: #efe6fa;
 }
-.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:hover .fa-solid {
+.fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div:active .fa-solid {
   color: #9356DC;
 }
 .fonctionnement .fonctionnements__etapes .fonctionnements__etapes_div .fonctionnements__etapes_divnum {
