@@ -231,7 +231,7 @@ body main #main__titre--h1 {
 }
 
 .cartecomplete {
-  background-color: #f7f7f7;
+  background-color: #f7F7F7;
 }
 
 .repas-vignette-validation {
@@ -285,14 +285,13 @@ body main #main__titre--h1 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 1;
-  transition: opacity 400ms ease;
+  transition: opacity 1s ease;
   -webkit-animation-name: droitegauche;
           animation-name: droitegauche;
   -webkit-animation-duration: 900ms;
           animation-duration: 900ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  margin-bottom: -3px;
 }
 @-webkit-keyframes droitegauche {
   0% {
@@ -316,8 +315,8 @@ body main #main__titre--h1 {
   color: white;
   -webkit-animation-name: cerclequitourne;
           animation-name: cerclequitourne;
-  -webkit-animation-duration: 800ms;
-          animation-duration: 800ms;
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -807,8 +806,9 @@ input[type=checkbox]:not(:checked) + label {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  flex-basis: calc(100vw - 80px);
-  flex: 1;
+  min-width: 50px;
+  max-width: calc(100vw - 80px);
+  flex-shrink: 1;
 }
 
 .parentspinner {

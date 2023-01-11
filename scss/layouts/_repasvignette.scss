@@ -1,5 +1,5 @@
 .cartecomplete {
-    background-color: #f7f7f7;
+    background-color: #f7F7F7;
 }
 
 .repas-vignette-validation {
@@ -55,11 +55,10 @@
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         opacity: 1;
-        transition: opacity 400ms ease;
+        transition: opacity 1s ease;
         animation-name: droitegauche;
         animation-duration: 900ms;
         animation-fill-mode: forwards;
-        margin-bottom: -3px;
 
         @keyframes droitegauche{
             0% {
@@ -77,7 +76,7 @@
         font-size: 20px;
         color: white;
         animation-name: cerclequitourne;
-        animation-duration: 800ms;
+        animation-duration: 600ms;
         animation-fill-mode: forwards;
 
         @keyframes cerclequitourne {
